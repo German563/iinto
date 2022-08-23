@@ -1,0 +1,91 @@
+body {
+    background-image: url("/img/bg.jpg");
+    background-color: #EFF6FF;
+    background-repeat: no-repeat;
+    background-size: auto;
+   }
+   hr {
+    color: grey;
+   }
+.line {
+    max-width: 100px;
+    position: left;
+}
+h2 {
+    width: 25%; 
+    text-align: center; 
+    border-bottom: 1px solid #000; 
+    line-height: 0.1em;
+    margin: 90px 0 20px; 
+
+ } 
+ 
+ h2 span { 
+    background-color: #EFF6FF;
+     padding:0 10px; 
+ }
+
+button {
+    width: 15%;
+    height: 35px;
+    background-color: #255A9B;
+    border: none;
+    cursor: pointer;
+    margin: 1%;
+    margin-top: 3%;
+
+
+  
+    
+}
+
+button .fb {
+height: 20px;
+padding: 12px;
+
+
+}
+
+.text_fb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  
+
+    
+}
+
+.col {
+display: flex;
+}
+
+.input-forms {
+    display: flex;
+    height: auto;
+}
+.float-conteiner {
+    margin: 20px;
+    border: solid 1px;
+    background-color: white;
+    height: 44px;
+    padding: 5px;
+    
+
+}
+
+input {
+    height: 20px;
+    border: none;
+    margin-top: 20px;
+    
+}
+
+.float-conteiner span {
+    position: absolute;
+    color: grey;
+}
+
+#id_mail {
+    border-right: solid 4px;
+}
