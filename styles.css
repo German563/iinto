@@ -1,3 +1,11 @@
+* {
+    font-family: "Barlow";
+    src:url(/fonts/barlow/Barlow-Medium.otf);
+    font-style: "Barlow-Medium";
+    font-weight: 400;
+
+}
+
 body {
     background-image: url("/img/bg.jpg");
     background-color: #EFF6FF;
@@ -54,10 +62,10 @@ button {
     cursor: pointer;
     margin: 1%;
     margin-top: 3%;
-
-
-  
     
+}
+button:last-child {
+    background-color: rgb(42, 29, 106);
 }
 
 button .fb {
@@ -65,6 +73,10 @@ height: 20px;
 padding: 12px;
 
 
+}
+
+#_blues {
+    background-color: #4f5c67;
 }
 
 .text_fb {
@@ -100,7 +112,8 @@ display: flex;
 
 }
 .float-conteiner:nth-child(odd) {
-    border-left: blue;
+    border-left: solid 2px blue;
+
 }
 
 input {
@@ -166,8 +179,8 @@ li {
     position: absolute;
     opacity: 0;
     cursor: pointer;
-    height: 0;
-    width: 0;
+    height: 30px;
+    width: 40px;
     
     
   }
@@ -213,10 +226,66 @@ li {
   
   /* Style the indicator (dot/circle) */
   .container .checkmark:after {
-    top: 9px;
-    left: 9px;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
+    border-radius: 10%;
     background: white;
+  }
+.info {
+
+    width: 14px;
+    height: 14px;
+    border: solid 1px;
+    cursor: crosshair;
+    color: grey;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 55%;
+    margin-top: 15px;
+
+
+  }
+
+span .info {
+    width: 100%;
+}
+
+
+[data-tooltip]::after {
+    content: attr(data-tooltip); /* Выводим текст */
+    position: absolute; /* Абсолютное позиционирование */
+    width: 300px; /* Ширина подсказки */
+    left: 55%; top: 76%; /* Положение подсказки */
+    background: white; /* Синий цвет фона */
+    color: black; /* Цвет текста */
+    padding: 0.5em; /* Поля вокруг текста */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Параметры тени */
+    pointer-events: none; /* Подсказка */
+    opacity: 0; /* Подсказка невидима */
+    transition: 1s; /* Время появления подсказки */
+    font-size: large;
+    
+  }
+  [data-tooltip]:hover::after {
+    opacity: 1;
+  }
+  
+  .terms-checkbox {
+   float: left;
+   margin: 0;
+  }
+
+  .terms-text {
+    padding: 5px;
+    margin-left: 5px;
+  }
+
+  .wrapper-terms {
+    margin-top: 100px;
+  }
+    .wrapper-btn .account {
+    margin: 100px;
+    width: 260px;
+    height: 45px;
+    background-color: #2196F3;
+    font-size: large;
+
   }
