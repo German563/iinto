@@ -2,7 +2,7 @@
     font-family: "Barlow";
     src:url(/fonts/barlow/Barlow-Light.otf);
     font-style: "Barlow-Light";
-    font-weight: 300;
+    font-weight: 200;
 
 }
 
@@ -15,6 +15,12 @@ body {
    hr {
     color: grey;
    }
+
+  section, footer, .main-wrapper {
+  margin-left: 55%;
+  margin-top: 5%;
+}
+
 
 .logo {
     margin-left: 50px;
@@ -33,11 +39,7 @@ body {
     position: left;
 }
 
-.containe {
-    margin-left: 55%;
-    margin-top: 5%;
 
-}
 h2 {
     width: 45%; 
     text-align: center; 
